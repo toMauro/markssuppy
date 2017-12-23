@@ -1,0 +1,695 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    color: #A60825;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    color: #A60825;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 18px 0 0 0;
+}
+
+li {
+    margin: 5px;
+    list-style-type: disc;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#footerHours li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+    
+
+li a {
+    text-decoration: none;
+    color: #A60825;
+    font-weight: 500;
+}
+
+li a:hover {
+    color: #f2ca52;
+}
+
+/********** HEADER **********/
+
+#header {
+    width: 100%;
+}
+
+#headerInfo {
+    height: 105px;
+    margin: 10px 7%;
+}
+
+#logo {
+    display: inline-block;
+}
+
+#headerContact {
+    display: inline-block;
+    position: relative;
+    bottom: 22px;
+    left: 55%;
+    text-align: center;
+}
+
+#headerContact h3 {
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-color: #f2ca52;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+
+#headerContact h4 {
+    margin: 0 0 2px 0;
+}
+
+#nav {
+    height: 15px;
+    width: 80%;
+    background-color: #A60825;
+    padding: 10px 10%;
+}
+
+#nav a {
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: center;
+    margin: 5px 2% 5px 2%;
+}
+
+#nav a:hover {
+    color: #f2ca52;
+}
+
+/********** HERO IMAGE **********/
+
+#hero {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+#heroBack {
+    width: 100%;
+    position: relative;
+}
+
+#years {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 8%;
+}
+
+/********** INTRO **********/
+
+#mainContent {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+#intro {
+    margin: 20px auto 60px auto;
+    width: 75%;
+}
+
+#introWelcome {
+    width: 97%;
+    margin: auto;
+}
+
+#introWelcome img {
+    display: inline-block;
+    width: 100px;
+}
+
+#intro h1 {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+#intro p {
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newsfeed {
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12%;
+}
+
+#newsfeed h2 {
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: #f2ca52;
+    width: 55%;
+    padding-bottom: 5px;
+}
+
+#sidebar {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sidebar ul {
+    margin-left: 55px;
+}
+
+.sideBox h2 {
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: #f2ca52;
+    padding-bottom: 5px;
+}
+
+.sideBox {
+    margin: 0 0 35px 0;
+}
+
+.sideBox p {
+    margin-left: 5%;
+}
+
+
+#sideAddress iframe {
+    width: 100%;
+    margin-top: 25px;
+    height: 350px;
+}
+
+/********** FOOTER **********/
+
+#footer {
+    height: 155px;
+    background-color: #A60825;
+    margin-top: 50px;
+    padding: 25px 7% 15px 7%;
+}
+
+#footer h2 {
+    font-weight: 300;
+    font-size: 18px;
+    color: #f2ca52;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: #f2ca52;
+    border-bottom-width: 2px;
+}
+
+#footerContact {
+    display: inline-block;
+    width: 25%;
+}
+
+#footerLogo {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 22%;
+    margin-left: 13%;
+    margin-right: 14%;
+}
+
+#footerLogo img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#footerContact p {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+#footerContact p:nth-child(4) {
+    margin: 10px 0;
+}
+
+#footerContact a {
+    font-weight: 200;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#footerContact a:hover {
+    color: #f2ca52;
+}
+
+#footerHours {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+#footerHours li {
+    color: #ffffff;
+    list-style: none;
+}
+
+#daysFooter {
+    display: inline-block;
+    text-align: right;
+}
+
+#hoursFooter {
+    display: inline-block;
+}
+
+#footerLogoMobile {
+    display: none;
+    background-color: #ffffff;
+}
+
+/********** MEDIA QUERIES **********/
+
+@media screen and (max-width: 1500px) {
+    #headerContact {
+        left: 65%;
+    }
+}
+    
+@media screen and (max-width: 1200px) {
+    #headerContact {
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    #footerHours {
+        width: 28%;
+    }
+    
+    #footerLogo {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    #mainContent {
+        width: 80%
+    }
+    
+    #intro {
+        width: 100%;
+    }
+    
+    #introWelcome {
+        width: 95%;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 935px) {
+    
+    #mainContent {
+        width: 85%
+    }
+    
+    #headerContact {
+        left: 47%;
+    }
+    
+    #introWelcome {
+        width: 95%;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    
+    #mainContent {
+        width: 95%
+    }
+    
+    #introWelcome {
+        width: 88%;
+    }
+    
+    #footerHours {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    #headerContact {
+        left: 42%;
+    }
+    
+    #introWelcome {
+        width: 92%;
+    }
+    
+    #newsfeed {
+        width: 90%;
+        height: 500px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    #newsfeed h2 {
+        width: 100%;        
+    }
+    
+    #sidebar {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    #footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    #footerLogo {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    
+    #introWelcome img {
+        width: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    #footerHours {
+        width: 34%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    
+    #introWelcome h1 {
+        font-size: 35px;
+    }
+    
+    #introWelcome {
+        width: 90%;
+    }
+    
+    #introWelcome img {
+        width: 70px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    
+    #footer {
+        height: auto;
+        padding-bottom: 45px;
+    }
+    
+    #footerContact {
+        display: block;
+        margin: auto;
+        width: 35%;
+        margin-bottom: 45px;
+        margin-top: 45px;
+    }
+    
+    #footerContact p {
+        margin: auto;
+        text-align: center;
+    }
+    
+    #footerContact a {
+        text-align: center;
+        display: block;
+    }
+    
+    #footerHours {
+        display: block;
+        margin: auto;
+        width: 35%;
+    }
+    
+    #footerLogo {
+        display: none;
+    }
+    
+    #footerLogoMobile {
+        display: block;
+        border-radius: 25px;
+        width: 42%;
+        margin: auto;
+        margin-top: 45px;
+    }
+    
+}
+
+@media screen and (max-width: 725px) {
+    #headerContact {
+        left: 35%;
+    }
+    
+    #introWelcome img {
+        width: 60px;
+    }
+    
+    #intro p {
+        width: 75%;
+    }
+    
+    #footerHours, #footerContact {
+        width: 40%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 675px) {
+    #introWelcome h1 {
+        font-size: 30px;
+    }
+    
+    #headerContact {
+        left: 30%;
+    }
+    
+    #intro p {
+        width: 85%;
+    }
+    
+    #footerLogoMobile {
+        width: 47%;
+    }
+    
+}
+
+
+@media screen and (max-width: 625px) {
+    #headerContact {
+        left: 25%;
+    }
+    
+    #footerHours, #footerContact {
+        width: 45%;
+    }
+    
+}
+
+@media screen and (max-width: 605px) {
+    #introWelcome img {
+        width: 50px;
+    }
+    
+    #introWelcome {
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    #headerContact {
+        left: 20%;
+    }
+    
+    #intro p {
+        width: 95%;
+    }
+    
+    #footerLogoMobile {
+        width: 50%;
+    }
+    
+    #footerHours, #footerContact {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    #introWelcome h1 {
+        font-size: 25px;
+    }    
+    
+    #introWelcome {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    
+    #logo {
+        display: block;
+        margin: auto;
+        margin-bottom: 35px;
+/*        width: 65%;*/
+    }
+    
+    #headerContact {
+        display: block;
+        margin: auto;
+        left: 0;
+        width: 45%;
+    }
+    
+    #headerInfo {
+        height: auto;
+    }
+    
+    #footerLogoMobile {
+        width: 53%;
+    }
+    
+}
+
+@media screen and (max-width: 510px) {
+    #introWelcome img {
+        display: none;
+    }
+    
+    #introWelcome h1 {
+        width: 100%;
+        margin: auto;
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    #footerContact, #footerHours {
+        width: 55%;
+    }
+    
+    #footerLogoMobile {
+        width: 58%;
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+    #footerHours, #footerContact {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #footerLogoMobile {
+        width: 245px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    #headerContact {
+        width: 55%;
+    }
+    
+}
